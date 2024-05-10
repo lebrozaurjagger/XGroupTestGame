@@ -12,6 +12,16 @@
 		649B38D62BEE299800CA0516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649B38D52BEE299800CA0516 /* Assets.xcassets */; };
 		649B38D92BEE299800CA0516 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649B38D82BEE299800CA0516 /* Preview Assets.xcassets */; };
 		649B38E32BEE29F200CA0516 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38E22BEE29F200CA0516 /* HomeView.swift */; };
+		649B38E52BEE2C2500CA0516 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38E42BEE2C2500CA0516 /* ColorScheme.swift */; };
+		649B38E72BEE350900CA0516 /* Acme.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 649B38E62BEE350900CA0516 /* Acme.ttf */; };
+		649B38EA2BEE352F00CA0516 /* Aguante.otf in Resources */ = {isa = PBXBuildFile; fileRef = 649B38E92BEE352F00CA0516 /* Aguante.otf */; };
+		649B38EE2BEE383E00CA0516 /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38ED2BEE383E00CA0516 /* StrokeText.swift */; };
+		649B38F12BEE4FC500CA0516 /* LevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F02BEE4FC500CA0516 /* LevelsView.swift */; };
+		649B38F32BEE719500CA0516 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F22BEE719500CA0516 /* ScoreView.swift */; };
+		649B38F52BEE794800CA0516 /* ScoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F42BEE794800CA0516 /* ScoreList.swift */; };
+		649B38F72BEE7EC500CA0516 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F62BEE7EC500CA0516 /* GameView.swift */; };
+		649B38F92BEE7EE700CA0516 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F82BEE7EE700CA0516 /* Grid.swift */; };
+		649B38FB2BEE979100CA0516 /* TileMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38FA2BEE979100CA0516 /* TileMovement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +31,18 @@
 		649B38D52BEE299800CA0516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		649B38D82BEE299800CA0516 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		649B38E22BEE29F200CA0516 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		649B38E42BEE2C2500CA0516 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		649B38E62BEE350900CA0516 /* Acme.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Acme.ttf; sourceTree = "<group>"; };
+		649B38E92BEE352F00CA0516 /* Aguante.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aguante.otf; sourceTree = "<group>"; };
+		649B38EB2BEE35E500CA0516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		649B38ED2BEE383E00CA0516 /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
+		649B38EF2BEE3FDB00CA0516 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
+		649B38F02BEE4FC500CA0516 /* LevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsView.swift; sourceTree = "<group>"; };
+		649B38F22BEE719500CA0516 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		649B38F42BEE794800CA0516 /* ScoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreList.swift; sourceTree = "<group>"; };
+		649B38F62BEE7EC500CA0516 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		649B38F82BEE7EE700CA0516 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		649B38FA2BEE979100CA0516 /* TileMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileMovement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +75,12 @@
 		649B38D02BEE299700CA0516 /* XGroupTestGame */ = {
 			isa = PBXGroup;
 			children = (
+				649B38EB2BEE35E500CA0516 /* Info.plist */,
 				649B38D12BEE299700CA0516 /* XGroupTestGameApp.swift */,
 				649B38D32BEE299700CA0516 /* ContentView.swift */,
-				649B38E12BEE29B300CA0516 /* ViewModel */,
 				649B38E02BEE29AC00CA0516 /* View */,
 				649B38DF2BEE29A500CA0516 /* Model */,
-				649B38D52BEE299800CA0516 /* Assets.xcassets */,
+				649B38E82BEE351100CA0516 /* Design */,
 				649B38D72BEE299800CA0516 /* Preview Content */,
 			);
 			path = XGroupTestGame;
@@ -75,6 +97,7 @@
 		649B38DF2BEE29A500CA0516 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				649B38FA2BEE979100CA0516 /* TileMovement.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -83,15 +106,26 @@
 			isa = PBXGroup;
 			children = (
 				649B38E22BEE29F200CA0516 /* HomeView.swift */,
+				649B38F02BEE4FC500CA0516 /* LevelsView.swift */,
+				649B38F22BEE719500CA0516 /* ScoreView.swift */,
+				649B38F42BEE794800CA0516 /* ScoreList.swift */,
+				649B38F62BEE7EC500CA0516 /* GameView.swift */,
+				649B38F82BEE7EE700CA0516 /* Grid.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		649B38E12BEE29B300CA0516 /* ViewModel */ = {
+		649B38E82BEE351100CA0516 /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				649B38E42BEE2C2500CA0516 /* ColorScheme.swift */,
+				649B38ED2BEE383E00CA0516 /* StrokeText.swift */,
+				649B38E92BEE352F00CA0516 /* Aguante.otf */,
+				649B38E62BEE350900CA0516 /* Acme.ttf */,
+				649B38EF2BEE3FDB00CA0516 /* Montserrat.ttf */,
+				649B38D52BEE299800CA0516 /* Assets.xcassets */,
 			);
-			path = ViewModel;
+			path = Design;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,7 +187,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				649B38D92BEE299800CA0516 /* Preview Assets.xcassets in Resources */,
+				649B38E72BEE350900CA0516 /* Acme.ttf in Resources */,
 				649B38D62BEE299800CA0516 /* Assets.xcassets in Resources */,
+				649B38EA2BEE352F00CA0516 /* Aguante.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,8 +200,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				649B38EE2BEE383E00CA0516 /* StrokeText.swift in Sources */,
+				649B38F12BEE4FC500CA0516 /* LevelsView.swift in Sources */,
+				649B38F52BEE794800CA0516 /* ScoreList.swift in Sources */,
+				649B38E52BEE2C2500CA0516 /* ColorScheme.swift in Sources */,
+				649B38F72BEE7EC500CA0516 /* GameView.swift in Sources */,
 				649B38E32BEE29F200CA0516 /* HomeView.swift in Sources */,
+				649B38F32BEE719500CA0516 /* ScoreView.swift in Sources */,
+				649B38FB2BEE979100CA0516 /* TileMovement.swift in Sources */,
 				649B38D42BEE299700CA0516 /* ContentView.swift in Sources */,
+				649B38F92BEE7EE700CA0516 /* Grid.swift in Sources */,
 				649B38D22BEE299700CA0516 /* XGroupTestGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +347,7 @@
 				DEVELOPMENT_TEAM = 5R537FQZP7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XGroupTestGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -332,6 +377,7 @@
 				DEVELOPMENT_TEAM = 5R537FQZP7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = XGroupTestGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
