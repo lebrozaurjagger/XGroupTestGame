@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ScoreView: View {
+    @StateObject private var model = GameModel()
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -22,18 +24,18 @@ struct ScoreView: View {
                 VStack {
                     Spacer()
                     
-                    ScoreList()
+                    Score(level: "1", image1: "Ship", image2: "Treasure", image3: "Kraken")
                         .padding(.bottom, 40)
                     
-                    ScoreList()
+                    Score(level: "2", image1: "Baloons", image2: "House", image3: "Castle")
                         .padding(.bottom, 40)
                     
-                    ScoreList()
+                    Score(level: "3", image1: "Cowboy", image2: "Arizona", image3: "Saloon")
                         .padding(.bottom, 40)
                     
                     Spacer()
                     
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: LevelsView().navigationBarBackButtonHidden(true)) {
                         Text("Back")
                             .tint(.white)
                             .fontWeight(.bold)

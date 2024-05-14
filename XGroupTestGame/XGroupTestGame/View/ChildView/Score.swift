@@ -1,5 +1,5 @@
 //
-//  ScoreList.swift
+//  Score.swift
 //  XGroupTestGame
 //
 //  Created by Phillip on 10.05.2024.
@@ -7,11 +7,17 @@
 
 import SwiftUI
 
-struct ScoreList: View {
+struct Score: View {
+    @State var level = ""
+    @State var image1 = ""
+    @State var image2 = ""
+    @State var image3 = ""
+    @State var time = "--:--"
+    
     var body: some View {
         VStack {
             HStack {
-                Text("Level 1")
+                Text("Level \(level)")
                     .font(.system(size: 20))
                     .foregroundColor(.white)
                     .padding(.leading)
@@ -27,14 +33,14 @@ struct ScoreList: View {
                     .frame(width: 36, height: 36)
                     .foregroundColor(.clear)
                     .background(
-                        Image("Ship")
+                        Image(image1)
                             .resizable()
                             .frame(width: 36, height: 36)
                     )
                 
                 Spacer()
                 
-                Text("01:22")
+                Text(time)
                     .foregroundColor(.white)
                     .padding(.trailing)
             }
@@ -46,14 +52,14 @@ struct ScoreList: View {
                     .frame(width: 36, height: 36)
                     .foregroundColor(.clear)
                     .background(
-                        Image("Ship")
+                        Image(image2)
                             .resizable()
                             .frame(width: 36, height: 36)
                     )
                 
                 Spacer()
                 
-                Text("--:--")
+                Text(time)
                     .foregroundColor(.white)
                     .padding(.trailing)
             }
@@ -65,14 +71,14 @@ struct ScoreList: View {
                     .frame(width: 36, height: 36)
                     .foregroundColor(.clear)
                     .background(
-                        Image("Ship")
+                        Image(image3)
                             .resizable()
                             .frame(width: 36, height: 36)
                     )
                 
                 Spacer()
                 
-                Text("--:--")
+                Text(time)
                     .foregroundColor(.white)
                     .padding(.trailing)
             }
@@ -88,5 +94,5 @@ struct ScoreList: View {
 }
 
 #Preview {
-    ScoreList()
+    Score()
 }

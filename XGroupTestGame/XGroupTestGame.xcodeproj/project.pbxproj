@@ -7,42 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		648D28482BEFC0AD008C28F0 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D28472BEFC0AD008C28F0 /* Game.swift */; };
+		648D284C2BEFC201008C28F0 /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D284B2BEFC201008C28F0 /* Board.swift */; };
+		648D284E2BEFC229008C28F0 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D284D2BEFC229008C28F0 /* Tile.swift */; };
+		648D285A2BF18EB3008C28F0 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648D28592BF18EB3008C28F0 /* Status.swift */; };
 		649B38D22BEE299700CA0516 /* XGroupTestGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38D12BEE299700CA0516 /* XGroupTestGameApp.swift */; };
 		649B38D42BEE299700CA0516 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38D32BEE299700CA0516 /* ContentView.swift */; };
 		649B38D62BEE299800CA0516 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649B38D52BEE299800CA0516 /* Assets.xcassets */; };
 		649B38D92BEE299800CA0516 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 649B38D82BEE299800CA0516 /* Preview Assets.xcassets */; };
-		649B38E32BEE29F200CA0516 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38E22BEE29F200CA0516 /* HomeView.swift */; };
 		649B38E52BEE2C2500CA0516 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38E42BEE2C2500CA0516 /* ColorScheme.swift */; };
 		649B38E72BEE350900CA0516 /* Acme.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 649B38E62BEE350900CA0516 /* Acme.ttf */; };
 		649B38EA2BEE352F00CA0516 /* Aguante.otf in Resources */ = {isa = PBXBuildFile; fileRef = 649B38E92BEE352F00CA0516 /* Aguante.otf */; };
-		649B38EE2BEE383E00CA0516 /* StrokeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38ED2BEE383E00CA0516 /* StrokeText.swift */; };
 		649B38F12BEE4FC500CA0516 /* LevelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F02BEE4FC500CA0516 /* LevelsView.swift */; };
 		649B38F32BEE719500CA0516 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F22BEE719500CA0516 /* ScoreView.swift */; };
-		649B38F52BEE794800CA0516 /* ScoreList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F42BEE794800CA0516 /* ScoreList.swift */; };
+		649B38F52BEE794800CA0516 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F42BEE794800CA0516 /* Score.swift */; };
 		649B38F72BEE7EC500CA0516 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F62BEE7EC500CA0516 /* GameView.swift */; };
-		649B38F92BEE7EE700CA0516 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38F82BEE7EE700CA0516 /* Grid.swift */; };
-		649B38FB2BEE979100CA0516 /* TileMovement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649B38FA2BEE979100CA0516 /* TileMovement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		649B38CE2BEE299700CA0516 /* XGroupTestGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XGroupTestGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		648D28472BEFC0AD008C28F0 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		648D284B2BEFC201008C28F0 /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		648D284D2BEFC229008C28F0 /* Tile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		648D28592BF18EB3008C28F0 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		649B38CE2BEE299700CA0516 /* Yukon-Gold: Classic World.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Yukon-Gold: Classic World.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		649B38D12BEE299700CA0516 /* XGroupTestGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XGroupTestGameApp.swift; sourceTree = "<group>"; };
 		649B38D32BEE299700CA0516 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		649B38D52BEE299800CA0516 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		649B38D82BEE299800CA0516 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		649B38E22BEE29F200CA0516 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		649B38E42BEE2C2500CA0516 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
 		649B38E62BEE350900CA0516 /* Acme.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Acme.ttf; sourceTree = "<group>"; };
 		649B38E92BEE352F00CA0516 /* Aguante.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Aguante.otf; sourceTree = "<group>"; };
 		649B38EB2BEE35E500CA0516 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		649B38ED2BEE383E00CA0516 /* StrokeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrokeText.swift; sourceTree = "<group>"; };
 		649B38EF2BEE3FDB00CA0516 /* Montserrat.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Montserrat.ttf; sourceTree = "<group>"; };
 		649B38F02BEE4FC500CA0516 /* LevelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelsView.swift; sourceTree = "<group>"; };
 		649B38F22BEE719500CA0516 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
-		649B38F42BEE794800CA0516 /* ScoreList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreList.swift; sourceTree = "<group>"; };
+		649B38F42BEE794800CA0516 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
 		649B38F62BEE7EC500CA0516 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		649B38F82BEE7EE700CA0516 /* Grid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
-		649B38FA2BEE979100CA0516 /* TileMovement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileMovement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +56,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		648D28582BF18BF7008C28F0 /* ChildView */ = {
+			isa = PBXGroup;
+			children = (
+				648D284B2BEFC201008C28F0 /* Board.swift */,
+				648D284D2BEFC229008C28F0 /* Tile.swift */,
+				649B38F42BEE794800CA0516 /* Score.swift */,
+				648D28592BF18EB3008C28F0 /* Status.swift */,
+			);
+			path = ChildView;
+			sourceTree = "<group>";
+		};
 		649B38C52BEE299700CA0516 = {
 			isa = PBXGroup;
 			children = (
@@ -67,7 +78,7 @@
 		649B38CF2BEE299700CA0516 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				649B38CE2BEE299700CA0516 /* XGroupTestGame.app */,
+				649B38CE2BEE299700CA0516 /* Yukon-Gold: Classic World.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,7 +108,8 @@
 		649B38DF2BEE29A500CA0516 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				649B38FA2BEE979100CA0516 /* TileMovement.swift */,
+				648D28472BEFC0AD008C28F0 /* Game.swift */,
+				649B38E42BEE2C2500CA0516 /* ColorScheme.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -105,12 +117,10 @@
 		649B38E02BEE29AC00CA0516 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				649B38E22BEE29F200CA0516 /* HomeView.swift */,
 				649B38F02BEE4FC500CA0516 /* LevelsView.swift */,
 				649B38F22BEE719500CA0516 /* ScoreView.swift */,
-				649B38F42BEE794800CA0516 /* ScoreList.swift */,
 				649B38F62BEE7EC500CA0516 /* GameView.swift */,
-				649B38F82BEE7EE700CA0516 /* Grid.swift */,
+				648D28582BF18BF7008C28F0 /* ChildView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -118,8 +128,6 @@
 		649B38E82BEE351100CA0516 /* Design */ = {
 			isa = PBXGroup;
 			children = (
-				649B38E42BEE2C2500CA0516 /* ColorScheme.swift */,
-				649B38ED2BEE383E00CA0516 /* StrokeText.swift */,
 				649B38E92BEE352F00CA0516 /* Aguante.otf */,
 				649B38E62BEE350900CA0516 /* Acme.ttf */,
 				649B38EF2BEE3FDB00CA0516 /* Montserrat.ttf */,
@@ -145,7 +153,7 @@
 			);
 			name = XGroupTestGame;
 			productName = XGroupTestGame;
-			productReference = 649B38CE2BEE299700CA0516 /* XGroupTestGame.app */;
+			productReference = 649B38CE2BEE299700CA0516 /* Yukon-Gold: Classic World.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -200,16 +208,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				649B38EE2BEE383E00CA0516 /* StrokeText.swift in Sources */,
 				649B38F12BEE4FC500CA0516 /* LevelsView.swift in Sources */,
-				649B38F52BEE794800CA0516 /* ScoreList.swift in Sources */,
+				648D285A2BF18EB3008C28F0 /* Status.swift in Sources */,
+				648D284E2BEFC229008C28F0 /* Tile.swift in Sources */,
+				649B38F52BEE794800CA0516 /* Score.swift in Sources */,
+				648D28482BEFC0AD008C28F0 /* Game.swift in Sources */,
 				649B38E52BEE2C2500CA0516 /* ColorScheme.swift in Sources */,
 				649B38F72BEE7EC500CA0516 /* GameView.swift in Sources */,
-				649B38E32BEE29F200CA0516 /* HomeView.swift in Sources */,
 				649B38F32BEE719500CA0516 /* ScoreView.swift in Sources */,
-				649B38FB2BEE979100CA0516 /* TileMovement.swift in Sources */,
 				649B38D42BEE299700CA0516 /* ContentView.swift in Sources */,
-				649B38F92BEE7EE700CA0516 /* Grid.swift in Sources */,
+				648D284C2BEFC201008C28F0 /* Board.swift in Sources */,
 				649B38D22BEE299700CA0516 /* XGroupTestGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +367,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pkotenko.XGroupTestGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Yukon-Gold: Classic World";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,7 +397,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = pkotenko.XGroupTestGame;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Yukon-Gold: Classic World";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

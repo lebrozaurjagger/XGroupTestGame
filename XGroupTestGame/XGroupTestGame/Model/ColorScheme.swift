@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 extension Color {
+    
 //    Background Colors
     public static var backgroundFrame: Color {
         return Color(UIColor(red: 43/255, green: 101/255, blue: 130/255, alpha: 1.0))
@@ -62,5 +63,27 @@ extension Color {
 //    Frame Stroke Color
     public static var strokeColorLevels: Color {
         return Color(UIColor(red: 255/255, green: 203/255, blue: 19/255, alpha: 1.0))
+    }
+    
+//    Status Color
+    public static var pauseColorTop: Color {
+        return Color(UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0))
+    }
+    public static var pauseColorBottom: Color {
+        return Color(UIColor(red: 194/255, green: 194/255, blue: 194/255, alpha: 1.0))
+    }
+    
+    public static var greatColorTop: Color {
+        return Color(UIColor(red: 0/255, green: 187/255, blue: 31/255, alpha: 1.0))
+    }
+    public static var greatColorBottom: Color {
+        return Color(UIColor(red: 0/255, green: 234/255, blue: 51/255, alpha: 1.0))
+    }
+    
+    public static var gameOverColorTop: Color {
+        return Color(UIColor(red: 187/255, green: 0/255, blue: 0/255, alpha: 1.0))
+    }
+    public static var gameOverColorBottom: Color {
+        return Color(UIColor(red: 234/255, green: 0/255, blue: 0/255, alpha: 1.0))
     }
 }
