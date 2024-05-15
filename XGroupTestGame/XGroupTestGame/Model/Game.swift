@@ -27,7 +27,7 @@ enum Direction {
 // Размер борды NxN
 
 class GameModel: ObservableObject {
-    var view = GameView(BOARD_DIMENSION: .init(get: <#T##() -> Int#>, set: <#T##(Int) -> Void#>))
+    var view = GameView(BOARD_DIMENSION: .constant(3))
     @Published var board: [[Int?]]
     @Published var hasWon = false
     
