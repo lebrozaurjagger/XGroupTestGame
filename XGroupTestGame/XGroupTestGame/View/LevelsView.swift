@@ -28,7 +28,7 @@ struct LevelsView: View {
                     ZStack {
                         Rectangle()
                             .stroke(Color.strokeColorLevels, lineWidth: 1)
-                            .frame(width: 353, height: 92)
+                            .frame(height: 92)
                             .padding()
                         
                         HStack {
@@ -89,13 +89,14 @@ struct LevelsView: View {
                                         }
                                     )
                             }
+                            .padding(.trailing, 10)
                         }
                     }
                     
                     ZStack {
                         Rectangle()
                             .stroke(Color.strokeColorLevels, lineWidth: 1)
-                            .frame(width: 353, height: 92)
+                            .frame(height: 92)
                             .padding()
                         
                         HStack {
@@ -164,13 +165,14 @@ struct LevelsView: View {
                                         }
                                     )
                             }
+                            .padding(.trailing, 10)
                         }
                     }
                     
                     ZStack {
                         Rectangle()
                             .stroke(Color.strokeColorLevels, lineWidth: 1)
-                            .frame(width: 353, height: 92)
+                            .frame(height: 92)
                             .padding()
                         
                         HStack {
@@ -239,6 +241,7 @@ struct LevelsView: View {
                                         }
                                     )
                             }
+                            .padding(.trailing, 10)
                         }
                     }
                     

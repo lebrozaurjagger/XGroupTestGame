@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ScoreView: View {
     @StateObject private var model = GameModel()
+    @State var paddingValue = if UIDevice.current.hasNotch { 40 } else { 12 }
     
     var body: some View {
         NavigationView {
@@ -24,17 +25,11 @@ struct ScoreView: View {
                 VStack {
                     Spacer()
                     
-                    Score(level: "1", image1: "Ship", image2: "Treasure", image3: "Kraken")
-                        .padding(.bottom, 40)
-                        .padding(.horizontal, 20)
                     
-                    Score(level: "2", image1: "Baloons", image2: "House", image3: "Castle")
-                        .padding(.bottom, 40)
-                        .padding(.horizontal, 20)
                     
-                    Score(level: "3", image1: "Cowboy", image2: "Arizona", image3: "Saloon")
-                        .padding(.bottom, 40)
-                        .padding(.horizontal, 20)
+                    Score(level: "1", image1: "Ship", image2: "Treasure", image3: "Kraken", padding: CGFloat(paddingValue))
+                    Score(level: "2", image1: "Baloons", image2: "House", image3: "Castle", padding: CGFloat(paddingValue))
+                    Score(level: "3", image1: "Cowboy", image2: "Arizona", image3: "Saloon", padding: CGFloat(paddingValue))
                     
                     Spacer()
                     

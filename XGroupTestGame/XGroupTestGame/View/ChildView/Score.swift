@@ -13,6 +13,7 @@ struct Score: View {
     @State var image2 = ""
     @State var image3 = ""
     @State var time = "--:--"
+    @State var padding: CGFloat
     
     var body: some View {
         VStack {
@@ -89,10 +90,12 @@ struct Score: View {
                 .stroke(Color.strokeColorLevels, lineWidth: 1)
                 .frame(height: 176)
         )
+        .padding(.bottom, padding)
+        .padding(.horizontal, 20)
         .preferredColorScheme(.dark)
     }
 }
 
 #Preview {
-    Score()
+    Score(padding: 0)
 }
