@@ -79,16 +79,6 @@ struct GameView: View {
                                 
 //                                Board Of Tiles View
                                 ZStack {
-                                    ZStack {
-                                        Image("Frame")
-                                            .resizable()
-                                            .scaledToFit()
-                                            .background(
-                                                Rectangle()
-                                                    .foregroundColor(.black.opacity(0.7))
-                                            )
-                                    }
-                                    
                                     Board(board: model.board, eachTile: eachTile)
                                         .aspectRatio(1, contentMode: .fit)
                                         .padding(12)
@@ -110,8 +100,17 @@ struct GameView: View {
                                                 }
                                             }
                                         })
+                                        .background(
+                                            Image("Frame")
+                                                .resizable()
+                                                .scaledToFit()
+                                                .background(
+                                                    Rectangle()
+                                                        .foregroundColor(.black.opacity(0.7))
+                                                )
+                                        )
+                                        .padding(.horizontal, 40)
                                 }
-                                .frame(width: 352)
                             }
                             
                             ZStack {
@@ -130,47 +129,63 @@ struct GameView: View {
                     
                     Spacer()
                     
-                    HStack {
-                        NavigationLink(destination: LevelsView().navigationBarBackButtonHidden(true)) {
-                            Image("Home")
+                    ZStack {
+                        if UIDevice.current.hasNotch {
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(.black.opacity(0.7))
+                                .frame(height: 120)
+                        } else {
+                            Rectangle()
+                                .foregroundColor(.black.opacity(0.7))
+                                .frame(width: .infinity, height: 120)
+                                .padding(.horizontal, -40)
+                        }
+                        
+                        HStack {
+                            Spacer()
+                            
+                            NavigationLink(destination: LevelsView().navigationBarBackButtonHidden(true)) {
+                                Image("Home")
+                                    .background(
+                                        RoundedRectangle(cornerRadius: 30)
+                                            .frame(width: 60, height: 60)
+                                            .foregroundColor(.buttonYellow)
+                                    )
+                            }
+                            
+                            Spacer()
+                            
+                            Rectangle()
+                                .stroke(Color.strokeColorLevels, lineWidth: 1)
+                                .frame(width: 100, height: 100)
+                                .background(
+                                    Image(styleOfImage)
+                                        .resizable()
+                                        .frame(width: 100, height: 100)
+                                )
+                            
+                            Spacer()
+                            
+                            Button(action: {
+                                self.start.toggle()
+                            }) {
+                                
+                                HStack(spacing: 15){
+                                    Image(self.start ? "Pause" : "Play")
+                                        .foregroundColor(.white)
+                                }
+                                .padding(.vertical)
                                 .background(
                                     RoundedRectangle(cornerRadius: 30)
                                         .frame(width: 60, height: 60)
-                                        .foregroundColor(.buttonYellow)
+                                        .foregroundColor(.buttonCyan)
                                 )
-                        }
-                        
-                        Rectangle()
-                            .stroke(Color.strokeColorLevels, lineWidth: 1)
-                            .frame(width: 100, height: 100)
-                            .background(
-                                Image(styleOfImage)
-                                    .resizable()
-                                    .frame(width: 100, height: 100)
-                            )
-                            .padding(.horizontal, 64)
-                        
-                        Button(action: {
-                            self.start.toggle()
-                        }) {
-                            
-                            HStack(spacing: 15){
-                                Image(self.start ? "Pause" : "Play")
-                                    .foregroundColor(.white)
                             }
-                            .padding(.vertical)
-                            .background(
-                                RoundedRectangle(cornerRadius: 30)
-                                    .frame(width: 60, height: 60)
-                                    .foregroundColor(.buttonCyan)
-                            )
+                            
+                            Spacer()
                         }
                     }
-                    .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(.black.opacity(0.7))
-                            .frame(width: 352, height: 120)
-                    )
+                    .padding(.horizontal, 40)
                 }
             }
         }
@@ -179,4 +194,24 @@ struct GameView: View {
 
 #Preview {
     GameView(BOARD_DIMENSION: .constant(3), backGround: "SeaBack", styleOfImage: "Ship", eachTile: "ship", gameCharacter: "Octopus")
+}
+
+extension UIDevice {
+    var hasNotch: Bool {
+        if #available(iOS 13.0, *) {
+            let scenes = UIApplication.shared.connectedScenes
+            let windowScene = scenes.first as? UIWindowScene
+            guard let window = windowScene?.windows.first else { return false }
+            
+            return window.safeAreaInsets.top > 20
+        }
+        
+        if #available(iOS 11.0, *) {
+            let top = UIApplication.shared.windows[0].safeAreaInsets.top
+            return top > 20
+        } else {
+            // Fallback on earlier versions
+            return false
+        }
+    }
 }
