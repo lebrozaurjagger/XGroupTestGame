@@ -36,7 +36,7 @@ struct LevelsView: View {
                                 .foregroundColor(.white)
                                 .padding()
                             
-                            NavigationLink(destination: GameView(BOARD_DIMENSION: .constant(3), backGround: "SeaBack", styleOfImage: "Ship", eachTile: "saloon", gameCharacter: "Octopus").navigationBarBackButtonHidden(true)) {
+                            NavigationLink(destination: GameView(BOARD_DIMENSION: .constant(3), backGround: "SeaBack", styleOfImage: "Ship", eachTile: "ship", gameCharacter: "Octopus").navigationBarBackButtonHidden(true)) {
                                 Rectangle()
                                     .stroke(Color.strokeColorLevels, lineWidth: 1)
                                     .frame(width: 72, height: 72)
