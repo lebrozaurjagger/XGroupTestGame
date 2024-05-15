@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Status: View {
     @State var text = "PAUSE"
+    @State var statusOpacity: Double = 1.0
     
     var body: some View {
         Text(text)
@@ -24,6 +25,7 @@ struct Status: View {
                     .foregroundColor(.black.opacity(0.7))
                     .frame(maxHeight: 56)
             )
+            .opacity(statusOpacity)
     }
 }
 #Preview {

@@ -92,3 +92,8 @@ struct Board: View {
 //        }(), eachTile: "ship")
 //    }
 //}
+
+
+#Preview {
+    GameView(BOARD_DIMENSION: .constant(3), backGround: "SeaBack", styleOfImage: "Ship", eachTile: "ship", gameCharacter: "Octopus")
+}

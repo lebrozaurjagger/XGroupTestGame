@@ -18,7 +18,6 @@ struct GameView: View {
     @StateObject private var model = GameModel()
     
     @State var statusOpacity: Double = 1.0
-    
     @State var backGround = ""
     @State var styleOfImage = ""
     @State var eachTile = ""
@@ -31,6 +30,7 @@ struct GameView: View {
                     .resizable()
                     .scaledToFill()
                     .ignoresSafeArea()
+                    .frame(width: 1)
                 
                 VStack {
                     ZStack {
@@ -42,9 +42,9 @@ struct GameView: View {
                                     .resizable()
                                     .scaledToFit()
                             )
-                            .padding(.bottom, -40)
+                            .padding(.top, 40)
                         
-                        HStack {
+                        HStack(alignment: .top) {
                             Image("Timer")
                             
                             Text(timerDisplay)
@@ -70,15 +70,6 @@ struct GameView: View {
                     }
                     
                     ZStack {
-                        Rectangle()
-                            .frame(width: 337, height: 337)
-                            .foregroundColor(.black.opacity(0.7))
-                            .background(
-                                Image("Frame")
-                                    .resizable()
-                                    .frame(width: 353, height: 353)
-                            )
-                        
                         ZStack {
                             VStack {
                                 if model.hasWon {
@@ -87,45 +78,57 @@ struct GameView: View {
                                 }
                                 
 //                                Board Of Tiles View
-                                Board(board: model.board, eachTile: eachTile)
-                                    .frame(maxWidth: .infinity)
-                                    .aspectRatio(1, contentMode: .fit)
-                                    .padding()
-                                    .gesture(DragGesture(minimumDistance: 20, coordinateSpace: .global).onEnded { value in
-                                        let horizontalAmount = value.translation.width as CGFloat
-                                        let verticalAmount = value.translation.height as CGFloat
-                                        
-                                        let direction: Direction = {
-                                            if abs(horizontalAmount) > abs(verticalAmount) {
-                                                return horizontalAmount < 0 ? .left : .right
-                                            } else {
-                                                return verticalAmount < 0 ? .up : .down
+                                ZStack {
+                                    ZStack {
+                                        Image("Frame")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .background(
+                                                Rectangle()
+                                                    .foregroundColor(.black.opacity(0.7))
+                                            )
+                                    }
+                                    
+                                    Board(board: model.board, eachTile: eachTile)
+                                        .aspectRatio(1, contentMode: .fit)
+                                        .padding(12)
+                                        .gesture(DragGesture(minimumDistance: 20, coordinateSpace: .global).onEnded { value in
+                                            let horizontalAmount = value.translation.width as CGFloat
+                                            let verticalAmount = value.translation.height as CGFloat
+                                            
+                                            let direction: Direction = {
+                                                if abs(horizontalAmount) > abs(verticalAmount) {
+                                                    return horizontalAmount < 0 ? .left : .right
+                                                } else {
+                                                    return verticalAmount < 0 ? .up : .down
+                                                }
+                                            }()
+                                            
+                                            if start == true {
+                                                withAnimation(.linear(duration: 0.2)) {
+                                                    model.slide(direction)
+                                                }
                                             }
-                                        }()
-                                        
-                                        if start == true {
-                                            withAnimation(.linear(duration: 0.2)) {
-                                                model.slide(direction)
-                                            }
-                                        }
-                                    })
+                                        })
+                                }
+                                .frame(width: 352)
                             }
-                            .padding(10)
                             
                             ZStack {
                                 if start == false {
-                                    Status(text: "PAUSED")
-                                        .opacity(1.0)
+                                    Status(text: "PAUSED", statusOpacity: 1.0)
+                                        .ignoresSafeArea()
                                 }
                                 
                                 if count >= 300 {
-                                    Status(text: "GAME OVER")
-                                        .opacity(1.0)
+                                    Status(text: "GAME OVER", statusOpacity: 1.0)
+                                        .ignoresSafeArea() 
                                 }
                             }
                         }
                     }
-                    .padding(.bottom, 30)
+                    
+                    Spacer()
                     
                     HStack {
                         NavigationLink(destination: LevelsView().navigationBarBackButtonHidden(true)) {
@@ -175,5 +178,5 @@ struct GameView: View {
 }
 
 #Preview {
-    LevelsView()
+    GameView(BOARD_DIMENSION: .constant(3), backGround: "SeaBack", styleOfImage: "Ship", eachTile: "ship", gameCharacter: "Octopus")
 }

@@ -20,6 +20,7 @@ struct LevelsView: View {
                     .ignoresSafeArea()
                     .offset(x: 160)
                     .blur(radius: 3.0, opaque: true)
+                    .frame(width: 1)
                 
                 VStack {
                     Spacer()
@@ -103,7 +104,7 @@ struct LevelsView: View {
                                 .foregroundColor(.white)
                                 .padding()
                             
-                            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
+                            NavigationLink(destination: GameView(BOARD_DIMENSION: .constant(3), backGround: "CastleBack", styleOfImage: "Baloons", eachTile: "baloon", gameCharacter: "Girl").navigationBarBackButtonHidden(true)) {
                                 Rectangle()
                                     .stroke(Color.strokeColorLevels, lineWidth: 1)
                                     .frame(width: 72, height: 72)
@@ -123,7 +124,7 @@ struct LevelsView: View {
                                         }
                                     )
                             }
-                            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
+                            NavigationLink(destination: GameView(BOARD_DIMENSION: .constant(3), backGround: "CastleBack", styleOfImage: "House", eachTile: "house", gameCharacter: "Girl").navigationBarBackButtonHidden(true)) {
                                 Rectangle()
                                     .stroke(Color.strokeColorLevels, lineWidth: 1)
                                     .frame(width: 72, height: 72)
@@ -143,7 +144,7 @@ struct LevelsView: View {
                                         }
                                     )
                             }
-                            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
+                            NavigationLink(destination: GameView(BOARD_DIMENSION: .constant(3), backGround: "CastleBack", styleOfImage: "Castle", eachTile: "castle", gameCharacter: "Girl").navigationBarBackButtonHidden(true)) {
                                 Rectangle()
                                     .stroke(Color.strokeColorLevels, lineWidth: 1)
                                     .frame(width: 72, height: 72)
@@ -178,7 +179,7 @@ struct LevelsView: View {
                                 .foregroundColor(.white)
                                 .padding()
                             
-                            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
+                            NavigationLink(destination: GameView(BOARD_DIMENSION: .constant(3), backGround: "DesertBack", styleOfImage: "Cowboy", eachTile: "cowboy", gameCharacter: "CowboyChar").navigationBarBackButtonHidden(true)) {
                                 Rectangle()
                                     .stroke(Color.strokeColorLevels, lineWidth: 1)
                                     .frame(width: 72, height: 72)
@@ -198,7 +199,7 @@ struct LevelsView: View {
                                         }
                                     )
                             }
-                            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
+                            NavigationLink(destination: GameView(BOARD_DIMENSION: .constant(3), backGround: "DesertBack", styleOfImage: "Arizona", eachTile: "arizona", gameCharacter: "CowboyChar").navigationBarBackButtonHidden(true)) {
                                 Rectangle()
                                     .stroke(Color.strokeColorLevels, lineWidth: 1)
                                     .frame(width: 72, height: 72)
@@ -218,7 +219,7 @@ struct LevelsView: View {
                                         }
                                     )
                             }
-                            NavigationLink(destination: ContentView().navigationBarBackButtonHidden(true)) {
+                            NavigationLink(destination: GameView(BOARD_DIMENSION: .constant(3), backGround: "DesertBack", styleOfImage: "Saloon", eachTile: "saloon", gameCharacter: "CowboyChar").navigationBarBackButtonHidden(true)) {
                                 Rectangle()
                                     .stroke(Color.strokeColorLevels, lineWidth: 1)
                                     .frame(width: 72, height: 72)

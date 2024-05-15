@@ -25,7 +25,7 @@ struct Score: View {
                 
                 Spacer()
             }
-            .padding(.horizontal, 12)
+            .padding(.horizontal, -8)
             
             HStack {
                 Rectangle()
@@ -44,7 +44,7 @@ struct Score: View {
                     .foregroundColor(.white)
                     .padding(.trailing)
             }
-            .padding(.horizontal, 30)
+            .padding(.horizontal, 10)
             
             HStack {
                 Rectangle()
@@ -63,7 +63,7 @@ struct Score: View {
                     .foregroundColor(.white)
                     .padding(.trailing)
             }
-            .padding(.horizontal, 30)
+            .padding(.horizontal, 10)
             
             HStack {
                 Rectangle()
@@ -82,12 +82,12 @@ struct Score: View {
                     .foregroundColor(.white)
                     .padding(.trailing)
             }
-            .padding(.horizontal, 30)
+            .padding(.horizontal, 10)
         }
         .background(
             Rectangle()
                 .stroke(Color.strokeColorLevels, lineWidth: 1)
-                .frame(width: 353, height: 176)
+                .frame(height: 176)
         )
         .preferredColorScheme(.dark)
     }
