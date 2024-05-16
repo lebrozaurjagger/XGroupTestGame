@@ -25,8 +25,6 @@ struct ScoreView: View {
                 VStack {
                     Spacer()
                     
-                    
-                    
                     Score(level: "1", image1: "Ship", image2: "Treasure", image3: "Kraken", padding: CGFloat(paddingValue))
                     Score(level: "2", image1: "Baloons", image2: "House", image3: "Castle", padding: CGFloat(paddingValue))
                     Score(level: "3", image1: "Cowboy", image2: "Arizona", image3: "Saloon", padding: CGFloat(paddingValue))

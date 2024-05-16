@@ -22,7 +22,6 @@ extension UIDevice {
             let top = UIApplication.shared.windows[0].safeAreaInsets.top
             return top > 20
         } else {
-            // Fallback on earlier versions
             return false
         }
     }
