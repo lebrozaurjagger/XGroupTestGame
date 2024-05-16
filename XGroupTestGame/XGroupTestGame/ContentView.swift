@@ -23,13 +23,21 @@ struct ContentView: View {
                     
                     ZStack {
                         ZStack {
-                            Ellipse()
-                                .fill(
-                                    LinearGradient(gradient: Gradient(colors: [.darkBlueLogoTop, .darkBlueLogoBottom]), startPoint: .bottom, endPoint: .top)
-                                )
-                                .strokeBorder(LinearGradient(gradient: Gradient(colors: [.goldenLogoTop, .goldenLogoBottom]), startPoint: .top, endPoint: .bottom), lineWidth: 4)
-                                .frame(width: 274, height: 133)
-                                .padding()
+                            ZStack {
+                                Ellipse()
+                                    .overlay(LinearGradient(gradient: Gradient(colors: [.goldenLogoTop, .goldenLogoBottom]), startPoint: .top, endPoint: .bottom)
+                                    )
+                                    .mask(Ellipse())
+                                    .frame(width: 282, height: 143)
+                                
+                                Ellipse()
+                                    .overlay(
+                                        LinearGradient(gradient: Gradient(colors: [.darkBlueLogoTop, .darkBlueLogoBottom]), startPoint: .bottom, endPoint: .top)
+                                    )
+                                    .mask(Ellipse())
+                                    .frame(width: 274, height: 133)
+                                    .padding()
+                            }
                             
                             VStack {
                                 //                    TODO: Stroke text rgba(0, 0, 0, 1)
@@ -71,7 +79,7 @@ struct ContentView: View {
                     
                     NavigationLink(destination: LevelsView().navigationBarBackButtonHidden(true)) {
                         Text("Start")
-                            .tint(.white)
+                            .foregroundColor(.white)
                             .fontWeight(.bold)
                             .background(
                                 RoundedRectangle(cornerSize: CGSize(width: 120, height: 60))

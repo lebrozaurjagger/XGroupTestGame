@@ -249,7 +249,7 @@ struct LevelsView: View {
                     
                     NavigationLink(destination: ScoreView().navigationBarBackButtonHidden(true)) {
                         Text("High Score")
-                            .tint(.white)
+                            .foregroundColor(.white)
                             .fontWeight(.bold)
                             .background(
                                 RoundedRectangle(cornerSize: CGSize(width: 120, height: 60))

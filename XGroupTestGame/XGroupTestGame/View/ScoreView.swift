@@ -33,7 +33,7 @@ struct ScoreView: View {
                     
                     NavigationLink(destination: LevelsView().navigationBarBackButtonHidden(true)) {
                         Text("Back")
-                            .tint(.white)
+                            .foregroundColor(.white)
                             .fontWeight(.bold)
                             .background(
                                 RoundedRectangle(cornerSize: CGSize(width: 120, height: 60))
